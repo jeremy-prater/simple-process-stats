@@ -24,7 +24,7 @@ libc = "0.2.72"
 tokio = { version = "1.0.0", features = ["fs"] }
 
 [target.'cfg(target_os = "macos")'.dependencies]
-darwin-libproc = "0.2.0"
+darwin-libproc = { version="0.2.0", git = "https://github.com/jamwaffles/darwin-libproc.git" }
 libc = "0.2.72"
 
 [dev-dependencies]
